@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eveline-R</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--Barra nav-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ms-2">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">
+                    <!--<img src="data:image/png;base64,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"
+                     alt="logo Brand" style="width: 40%"--> </a> 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!--Inizio link nav bar-->
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Saldi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Welcome Summer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Last Minute</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recensioni</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Cerca</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+    <main>
+        
+        <!--primo blocco con titolo-->
+        <div class="card text-center">
+            <div class="card-body col12">
+              <h1 class="card-title">Eveline-R-</h1>
+              <p class="card-text">Scopri le destinazioni più calde del momento!</p>
+              <a href="#" class="btn btn-primary">prenota ora</a>
+            </div>
+        </div>
+
+        <div class="container  text-center">
+            <div class="row"> <!--Primo blocco -->
+                <h2>Saldi</h2>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+             
+             <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="row mt-5"> <!--secondo blocco -->
+                <h2>Welcome summer</h2>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="row mt-5"> <!--terzo blocco -->
+                <h2>Offerta del giorno</h2>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="row mt-5"> <!--quarto blocco -->
+                <h2>Last minute</h2>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="row mt-5"> <!--quinto blocco -->
+                <h2>Dicono di noi</h2>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                        <img src="https://place-hold.it/300" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+
+
+
+
+
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
